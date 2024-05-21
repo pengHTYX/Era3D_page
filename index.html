@@ -171,9 +171,19 @@
         </figure>
       </div>
   </div>
-  <p> <b> Motivation.</b> In a dense multiview attention layer (<b>c</b>), all feature vectors of multiview images are fed into an attention block.
-    For a general camera setting (<b>a</b>) with arbitrary viewpoints and intrinsics, utilizing epipolar constraint to construct an epipolar attention (<b>d</b>) needs to correlate the features on the epipolar line. This means that we need to sample points along the epipolar line to compute such an attention layer. In our canonical camera setting (<b>b</b>) with orthogonal cameras and viewpoints on an elevation 0&deg , epipolar lines align with the row of the images across different views (<b>e</b>), which eliminates the need to resample epipolar line to compute epipolar attention. Thus, epipolar attention can be efficiently implemented by a row-wise attention layer which reduces computational complexity to <span class="katex">O(n^2)</span> where n is the dimension of image latent feature maps.</p>
-</section>
+  <p> <b> Motivation.</b> 
+    We analyze different types of multiview attention layers. In a dense multiview attention layer <b>(c)</b>, all
+    feature vectors of multiview images are fed into an attention block. For a general camera setting
+    <b>(a)</b> with arbitrary viewpoints and intrinsics, utilizing epipolar constraint to construct an epipolar
+    attention <b>(d)</b> needs to correlate the features on the epipolar line. This means that we need to sample
+    K points along each epipolar line to compute such an attention layer. In our canonical camera setting
+    <b>(b)</b> with orthogonal cameras and viewpoints on an elevation of 0<sup>°</sup>, epipolar lines align with the
+    row of the images across different views <b>(e)</b>, which eliminates the need to resample epipolar line
+    to compute epipolar attention. We assume the latent feature map has a resolution of <i>H &times; W</i> and
+    <i>H = W = S</i>. In such a <i>N</i>-view camera system, row-wise attention reduces the computational
+    complexity to O(<i>N<sup>2</sup>S<sup>3</sup></i>).
+
+  </section>
 
   <section class="section">
     <!-- results -->
