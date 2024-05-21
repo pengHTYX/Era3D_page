@@ -167,7 +167,13 @@
           <figcaption>&nbsp;&nbsp;&nbsp;&nbsp;
                       (c) Dense MV attention&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       (d) Epipolar MV attention&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      (e) Row-wise MV attention</figcaption>
+                      (e) Row-wise MV attention
+          </figcaption>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;
+            O(<i>N<sup>2</sup>S<sup>4</sup></i>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            O(<i>N<sup>2</sup>S<sup>2</sup>K</i>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            O(<i>N<sup>2</sup>S<sup>3</sup></i>)
+         </p>
         </figure>
       </div>
   </div>
@@ -176,7 +182,7 @@
     feature vectors of multiview images are fed into an attention block. For a general camera setting
     <b>(a)</b> with arbitrary viewpoints and intrinsics, utilizing epipolar constraint to construct an epipolar
     attention <b>(d)</b> needs to correlate the features on the epipolar line. This means that we need to sample
-    K points along each epipolar line to compute such an attention layer. In our canonical camera setting
+    <i>K</i> points along each epipolar line to compute such an attention layer. In our canonical camera setting
     <b>(b)</b> with orthogonal cameras and viewpoints on an elevation of 0<sup>°</sup>, epipolar lines align with the
     row of the images across different views <b>(e)</b>, which eliminates the need to resample epipolar line
     to compute epipolar attention. We assume the latent feature map has a resolution of <i>H &times; W</i> and
