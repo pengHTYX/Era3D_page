@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <!-- <link rel="icon" href=""> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -83,10 +83,122 @@
             using Efficient Row-wise Attention</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Anonymous Author(s)</span>
+              Peng Li<sup>1*</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://liuyuan-pal.github.io/">Yuan Liu</a><sup>2,3*</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://www.xxlong.site/">Xiaoxiao Long</a><sup>1,2&dagger;</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="http://www.feihuzhang.com/">Feihu Zhang</a><sup>3</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://clinplayer.github.io/">Cheng Lin</a><sup>2</sup>,</span>
+            </span>
+            <span class="author-block">
+              Mengfei Li<sup>1</sup>,</span>
+            </span>
+            <span class="author-block">
+              Xingqun Qi<sup>1</sup>,</span>
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="'https://www.shanghangzhang.com/">Shanghang Zhang</a> <sup>4</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="http://wei-xue.com/index.htm">Wei Xue</a><sup>1</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://clinplayer.github.io/">Wenhan Luo</a><sup>1</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://ece.hkust.edu.hk/pingtan">Ping Tan</a><sup>1,5</sup>,</span>
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.hku.hk/people/academic-staff/wenping">Wenping Wang</a><sup>2</sup>,</span>
+            </span>
+            <span class="author-block">
+              Qifeng Liu<sup>1</sup>,</span>
+            </span>
+            <span class="author-block">
+             <a href="https://cse.hkust.edu.hk/admin/people/faculty/profile/yikeguo">Yike Guo</a><sup>1&dagger;</sup></span>
             </span>
           </div>
-        </div>
+          <br>
+          <sup>*</sup>The first two authors contribute equally. &nbsp;&nbsp;
+          <sup>&dagger;</sup>Corresponding authors. &nbsp;&nbsp;
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>HKUST,</span>
+            <span class="author-block"><sup>2</sup>HKU,</span>
+            <span class="author-block"><sup>3</sup>DreamTech,</span>
+            <span class="author-block"><sup>4</sup>PKU,</span>
+            <span class="author-block"><sup>5</sup>LightIllusion</span>
+            
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>arxiv</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2405.11616"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arxiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/pengHTYX/Era3D"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/pengHTYX/Era3D_MV_demo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-desktop"></i>
+                  </span>
+                  <span>Demo</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/pengHTYX/MacLab-Era3D-512-6view/tree/main"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Model</span>
+                  </a>
+            </div>
+          </div>
       </div>
     </div>
   </div>
@@ -467,23 +579,53 @@
         </section>
 
 
+        <section class="section">
+          <div class="container is-max-desktop">
+            <!-- Concurrent Work. -->
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <h2 class="title is-3">Acknowledgement</h2>
+        
+                <div class="content has-text-justified">
+                  <p>
+                    This work is mainly supported by Hong Kong Generative AI Research & Development Center (HKGAI) led by Prof. Yike Guo. We are grateful for the necessary GPU resources provided by both Hong Kong University of Science and Technology (HKUST) and DreamTech.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/ Concurrent Work. -->
+          </div>
+        </section>
+        
+<section class="section" id="BibTeX">
+          <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
 
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            We thank the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> team for providing this
-            amazing website template.
-          </p>
+    <pre style="background-color:#e9eeef;padding: 1.25em 1.5em">
+<code>@article{li2024era3d,   
+  title={Era3D: High-Resolution Multiview Diffusion using Efficient Row-wise Attention},
+  author={Li, Peng and Liu, Yuan and Long, Xiaoxiao and Zhang, Feihu and Lin, Cheng and Li, Mengfei and Qi, Xingqun and Zhang, Shanghang and Luo, Wenhan and Tan, Ping and others},
+  journal={arXiv preprint arXiv:2405.11616},
+  year={2024}
+}</code></pre> 
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
+        </section>
+        
+        
+        <footer class="footer">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-8">
+                <div class="content">
+                  <p>
+                    We thank the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> team for providing this
+                    amazing website template.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
 
 
 </body>
